@@ -1,0 +1,17 @@
+name: RestAPI-CI
+
+on:
+
+  pull_request:
+    branches: [ "main", "dev" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: clone this Repo
+        uses: actions/checkout@v1
+
+      - name: run all tests
+        run: mvn test
