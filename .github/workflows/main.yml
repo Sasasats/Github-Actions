@@ -22,7 +22,16 @@ jobs:
 
   maven-check:
     runs-on: ubuntu-latest
-
+    
+    needs: allure-check
+    
     steps:
       - name: Maven check
         run: mvn -version
+  
+  allure-check:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Allure check
+        run: allure --version
