@@ -4,6 +4,7 @@
     <test name="RestAPI">
         <classes>
             <class name="TypicodeTest"></class>
+            <class name="TestPullRequest"></class>
         </classes>
     </test>
 </suite>

@@ -4,7 +4,7 @@ import api.models.Post;
 import api.models.user.User;
 import aquality.selenium.browser.AqualityServices;
 import aquality.selenium.core.logging.Logger;
-import org.apache.commons.lang.RandomStringUtils;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utils.JsonParser;
